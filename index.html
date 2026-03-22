@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lotto Number Generator</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark-mode">
+    <div class="theme-toggle">
+        <button id="theme-btn">☀️ Light Mode</button>
+    </div>
     <div class="container">
-        <h1>Lotto Number Generator</h1>
-        <div class="numbers"></div>
-        <button id="generate">Generate Numbers</button>
+        <h1>Lotto Generator</h1>
+        <div id="lotto-numbers" class="lotto-numbers">
+            <!-- Numbers will be generated here -->
+            <div class="number">?</div>
+            <div class="number">?</div>
+            <div class="number">?</div>
+            <div class="number">?</div>
+            <div class="number">?</div>
+            <div class="number">?</div>
+        </div>
+        <button id="generate-btn">Generate Numbers</button>
     </div>
     <script src="main.js"></script>
 </body>
